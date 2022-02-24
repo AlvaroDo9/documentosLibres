@@ -1,0 +1,22 @@
+@use '@/assets/styles/settings/_variables.scss';
+.tab {
+  border-bottom: 1px solid variables.$secondary_dark_color;
+  display: block;
+  font-size: 1.2rem !important;
+  margin: 0px auto;
+  &__ul {
+    display: flex !important;
+  }
+  &__li {
+    padding: 0.2rem 2rem;
+    transition: all 0.5s ease;
+    border-bottom: 5px solid transparent;
+    &--active {
+      border-bottom: 5px solid variables.$primary_color;
+      & a {
+        color: variables.$text_color;
+        font-weight: bold;
+      }
+    }
+  }
+}

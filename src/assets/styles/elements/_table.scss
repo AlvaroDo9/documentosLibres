@@ -1,0 +1,117 @@
+@use "../settings/variables";
+.table-mod01 {
+  width: 100%;
+  margin-top: 1rem;
+  color: variables.$text-color;
+
+  & thead {
+    & .table-mod01__head th {
+      border-bottom: 3px solid variables.$text-color !important;
+      background: variables.$background-lighter-color;
+      padding: 0.3rem 0.3rem !important;
+      text-align: left;
+      font-size: variables.$fs-15;
+      color: variables.$text-color;
+    }
+    & .table-mod01__head {
+      filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.1));
+    }
+  
+    & .table-mod01__espacio-head th {
+      font-size: 0.8rem;
+      line-height: 1em;
+    }
+  }
+  & tbody {
+    background: variables.$background-lighter-color;
+    & tr {
+      border-bottom: 1px solid variables.$text-color-default;
+      background: variables.$background-lighter-color;
+      filter: drop-shadow(0 13px 10px rgba(0, 0, 0, 0.1));
+      & td {
+        padding: 0.6rem 0.4rem;
+        & p.nombre {
+          font-size: variables.$fs-18;
+          font-weight: bold;
+        }
+        &.a-derecha {
+          text-align: right !important;
+        }
+        & p.secundario {
+          font-size: variables.$fs-16;
+          color: variables.$text-color-default;
+          font-weight: bold;
+        }
+        & p.tercero {
+          font-size: variables.$fs-16;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.table-mod03 {
+  width: 100%;
+  margin-top: 2rem;
+  color: variables.$text-color;
+  & tbody {
+    border-bottom: 2px solid variables.$secondary_dark_color;
+    & tr.tr-padre td {
+      padding: 0.7rem 0.5rem;
+    }
+    & tr.tr-hijo td {
+      padding: 0.7rem 0.5rem;
+    }
+    & tr {
+      filter: drop-shadow(0 13px 10px rgba(0, 0, 0, 0.1));
+      background: variables.$background-lighter-color;
+      & td {
+        &.border-bottom-grey {
+          border-bottom: 1px solid variables.$secondary_color;
+        }
+        & .boticon {
+          margin-top: 0.2rem;
+        }
+        & p.nombre-padre {
+          font-size: variables.$fs-18;
+          font-weight: bold;
+          line-height: 1em;
+          margin-bottom: 0;
+          padding-bottom: 0.15em;
+        }
+        & p.nombre-hijo {
+          font-size: variables.$fs-16;
+          font-weight: bold;
+          line-height: 1em;
+          padding-bottom: 0.15em;
+          color: variables.$secondary_dark_color;
+        }
+        & p.siglas-padre {
+          font-size: variables.$fs-16;
+          margin-top: 0;
+          padding: 0;
+          line-height: 1em;
+          color: variables.$secondary_dark_color;
+        }
+        & p.siglas-hijo {
+          font-size: variables.$fs-14;
+          color: variables.$secondary_dark_color;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          line-height: 1em;
+        }
+        & p.numero-padre {
+          font-size: variables.$fs-16;
+          font-weight: bold;
+          padding: auto 1rem;
+        }
+        & p.numero-hijo {
+          font-size: variables.$fs-18;
+          font-weight: bold;
+          color: variables.$secondary_dark_color;
+        }
+      }
+    }
+  }
+}

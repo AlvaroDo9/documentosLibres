@@ -1,0 +1,48 @@
+$_darkest-grey: #362417;
+$_dark-grey: #617592;
+$_grey-disabled: #ccd7e6;
+$_grey: #D3DDEB;
+$_light-grey: #EDF1F5;
+$_lightest-grey: #F5F7FA;
+$_bistre: #362417;
+$_red-ryb: red;
+$_red-ryb-dark: #C32614;
+$_sandy-brown: #FDB172;
+$_sandy-brown-dark: #DA8E50;
+$_white: #fff;
+$_fondo-modal: rgba(0, 0, 0, 0.3);
+$_honey-yellow: #F7AC00;
+$trasparente: transparent;
+
+$primary-color: $_red-ryb;
+$primary-dark-color: $_red-ryb-dark;
+$secondary-color: $_grey;
+$secondary-dark-color: $_dark-grey;
+$btn-default-color: $_light-grey;
+$btn-default-dark-color: $_grey;
+$background-modal: $_fondo-modal;
+$background-dark-color: $_bistre;
+$background-lighter-color: $_white;
+$background-body: $_lightest-grey;
+$grey-switch: $_dark-grey;
+
+$proceso: $_honey-yellow;
+$warning-color: $_honey-yellow;
+$exclamation-color: $_red-ryb;
+$sidebar-active: $_sandy-brown;
+$siderbar-subtitulo: $_grey-disabled;
+
+$text-color: $_darkest-grey;
+$text-color-default: $_dark-grey;
+$text-medium: $_grey;
+$text-muted-color: $_grey;
+$text-inverted-color: $_white;
+
+$border-color: $_dark-grey;
+$border-color-medium: $_grey;
+
+$palette: "primary" $primary-color $background-lighter-color $trasparente,
+  "secondary" $secondary-color $secondary-dark-color $trasparente;
+// $background-darker-color: $_cod-gray;
+
+// $border-inverted-color: $_gallery;

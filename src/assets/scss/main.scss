@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+// Import a Google Font
+@use '@/assets/styles/settings/_variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+// Update Bulma's global variables
+$link: grey;
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: variables.$background-body;
+$control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+// Import only what you need from Bulma
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+// @import "~bulma/sass/elements/button.sass";
+@import "~bulma/sass/elements/container.sass";
+// @import "~bulma/sass/elements/title.sass";
+@import "~bulma/sass/form/_all.sass";
+// @import "~bulma/sass/components/navbar.sass";
+// @import "~bulma/sass/layout/hero.sass";
+// @import "~bulma/sass/layout/section.sass";
+@import "~bulma/sass/grid/_all.sass";
+@import "~bulma/sass/helpers/spacing.sass";
+
+//Margen inferior del label al input
+.label {
+  font-size: variables.$fs_15;
+  &:not(:last-child){
+    margin-bottom: 0.1em;
+  }
+}
+//margen inferior del field
+.field {
+  &:not(:last-child){
+    margin-bottom: 0.95em;
+  }
+}
+h1, h2, h3, h4 {
+  font-weight: bold;
+  color: variables.$text-color;
+}
+h1 {
+  font-size: variables.$fs_h1;
+}
+h2 {
+  font-size: variables.$fs_h2;
+}
+h3 {
+  font-size: variables.$fs_h3;
+}
+h4 {
+  font-size: variables.$fs_h4;
+}

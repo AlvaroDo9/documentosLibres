@@ -1,0 +1,51 @@
+@use "sass:math";
+
+$font-family: "Open Sans", sans-serif;
+
+// Typography scale
+$fs-base: 16;
+
+$_fs-9: math.div(9, $fs-base) + rem;
+$_fs-10: math.div(10, $fs-base) + rem;
+$_fs-12: math.div(12, $fs-base) + rem;
+$_fs-13: math.div(13, $fs-base) + rem;
+$_fs-14: math.div(14, $fs-base) + rem;
+$_fs-15: math.div(15, $fs-base) + rem;
+$_fs-16: math.div(16, $fs-base) + rem;
+$_fs-18: math.div(18, $fs-base) + rem;
+$_fs-22: math.div(22, $fs-base) + rem;
+$_fs-24: math.div(24, $fs-base) + rem;
+$_fs-28: math.div(28, $fs-base) + rem;
+$_fs-30: math.div(30, $fs-base) + rem;
+
+
+//Buttons
+$fs-btn-big: $_fs-14;
+$fs-btn-medium: $_fs-13;
+$fs-btn-small: $_fs-10;
+
+//Titulos
+$fs-h1: $_fs-30;
+$fs-h2: $_fs-28;
+$fs-h3: $_fs-24;
+$fs-h4: $_fs-22;
+$fs-h5: $_fs-18;
+
+$fs-18: $_fs-18;
+$fs-16: $_fs-16;
+$fs-15: $_fs-15;
+$fs-14: $_fs-14;
+$fs-13: $_fs-13;
+
+
+//modal
+$fs-modal-header-title: $fs-h4;
+$fs-modal-header-subtitle: $fs-h5;
+
+// Typography applications
+$fs-pill: $_fs-10;
+$fs-footer: $_fs-12;
+$fs-header-titulos: $_fs-14;
+$fs-header-salir: $_fs-14;
+$fs-menu: $_fs-14;
+$fs-body: $_fs-14;
